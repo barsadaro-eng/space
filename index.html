@@ -2,151 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <style>
-        /* Importación de fuente moderna */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            /* Fondo con imagen estética de alta calidad */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: white;
-        }
-
-        /* Contenedor principal con efecto de cristal (Glassmorphism) */
-        .xat-container {
-            width: 90%;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 40px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            color: #ff85a2; /* Rosa pastel */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .tagline {
-            font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            opacity: 0.8;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .box {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 15px;
-            border-left: 4px solid #80deea; /* Cian suave */
-            transition: 0.3s;
-            text-align: left;
-        }
-
-        .box:hover {
-            background: rgba(0, 0, 0, 0.4);
-            transform: scale(1.02);
-        }
-
-        .box h3 {
-            margin-top: 0;
-            font-size: 1.1rem;
-            color: #80deea;
-        }
-
-        .box p {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 0;
-        }
-
-        .links {
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 25px;
-            margin: 5px;
-            background: #ff85a2;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #ff4d7d;
-            box-shadow: 0 0 15px #ff85a2;
-        }
-
-        .status-dot {
-            height: 10px;
-            width: 10px;
-            background-color: #4dfa62;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 5px;
-            box-shadow: 0 0 8px #4dfa62;
-        }
-    </style>
+    <title>Perfil iluce</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="xat-container">
-        <div class="status">
-            <span class="status-dot"></span> <small>Online & Chill</small>
-        </div>
-        <h1>✨ Yael ✨</h1>
-        <div class="tagline">Bienvenido a mi rincón personal</div>
-
-        <div class="content-grid">
-            <div class="box">
-                <h3>Sobre Mí</h3>
-                <p>Explorador del chat, amante del diseño minimalista y fan de las buenas conversaciones. Me encanta el estilo aesthetic.</p>
+    <!-- Contenedor principal del perfil -->
+    <div id="container">
+        <div id="main_content">
+            <!-- Aquí va el contenido del usuario (texto, widgets, etc) -->
+            <div class="user-space">
+                <!-- Contenido de iluce -->
             </div>
-            
-            <div class="box">
-                <h3>Mis Reglas</h3>
-                <p>1. Respeto ante todo.<br>2. No spam de enlaces.<br>3. Disfruta el momento.<br>4. Si hay Bingo, usa !JOIN.</p>
-            </div>
-        </div>
-
-        <div class="links">
-            <a href="#" class="btn">Añadir</a>
-            <a href="#" class="btn">Mensaje</a>
-            <a href="#" class="btn">Regalo</a>
-        </div>
-
-        <div style="margin-top: 30px; font-size: 0.7rem; opacity: 0.5;">
-            &copy; 2026 xat.com | Designed with Love
         </div>
     </div>
 
