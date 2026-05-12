@@ -1,108 +1,112 @@
-/* Estilos generales del contenedor */
-.perfil-container {
-    width: 650px;
-    background: rgba(15, 15, 15, 0.95);
-    color: #efefef;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    margin: 20px auto;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Cabecera */
-.perfil-header {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
     display: flex;
+    justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #ff4d4d; /* Color de acento */
-    padding-bottom: 15px;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal estilo tarjeta */
+.profile-card {
+    background: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ff4757;
+}
+
+/* Encabezado */
+.profile-header h1 {
+    font-size: 2rem;
+    color: #2f3542;
+    margin-bottom: 5px;
+}
+
+.profile-header .subtitle {
+    color: #747d8c;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.rating {
     margin-bottom: 20px;
 }
 
-.avatar-anime img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #ff4d4d;
-    margin-right: 15px;
-    object-fit: cover;
+.star {
+    color: #ffa502;
+    font-size: 1.2rem;
+    margin-right: 2px;
 }
 
-.nombre-usuario h1 {
-    font-size: 24px;
-    letter-spacing: 2px;
-    color: #ff4d4d;
-    text-transform: uppercase;
+/* Sección de datos personales */
+.profile-info {
+    border-top: 1px solid #f1f2f6;
+    border-bottom: 1px solid #f1f2f6;
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
-.id-user {
-    font-size: 12px;
-    color: #888;
-}
-
-/* Cuerpo del perfil */
-.contenido-flex {
-    display: flex;
-    gap: 20px;
-}
-
-/* Sidebar izquierda */
-.info-sidebar {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.datos p {
-    font-size: 14px;
+.profile-info p {
+    font-size: 1rem;
     margin-bottom: 8px;
-    border-bottom: 1px solid #222;
+    color: #57606f;
 }
 
-.frase-pequena {
+.profile-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Cita destacada */
+.profile-quote {
+    background-color: #f1f2f6;
+    border-left: 4px solid #747d8c;
+    padding: 12px 15px;
+    margin-bottom: 20px;
     font-style: italic;
-    font-size: 12px;
-    color: #bbb;
-    margin: 15px 0;
-    padding: 10px;
-    border-left: 3px solid #ff4d4d;
+    border-radius: 0 8px 8px 0;
 }
 
-.estrellas {
-    color: #ff4d4d;
-    font-size: 18px;
+/* Pie de la tarjeta con notas y firmas */
+.profile-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Sección principal de foto */
-.main-photo {
-    flex: 2;
-    text-align: center;
+.heart-text {
+    font-weight: bold;
+    color: #ff4757;
 }
 
-.foto-marco img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 4px;
-    filter: grayscale(20%);
-    transition: 0.3s;
+.heart {
+    color: #ff4757;
 }
 
-.foto-marco img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02);
+.val-text {
+    line-height: 1.5;
+    color: #2f3542;
 }
 
-.frase-destacada h3 {
-    margin-top: 15px;
-    color: #ff4d4d;
-    font-size: 20px;
+.signature {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2f3542;
 }
 
-.frase-destacada p {
-    font-size: 14px;
-    color: #ddd;
-    line-height: 1.6;
+.author {
+    color: #747d8c;
+    font-size: 0.9rem;
 }
